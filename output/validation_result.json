@@ -1,0 +1,51 @@
+{
+  "document_name": "Municipal_Letter.docx",
+  "overall_status": "partial_compliance",
+  "results": [
+    {
+      "rule_id": "R1",
+      "rule_text": "Mindestgrabentiefe beträgt mindestens 60 cm",
+      "related_constraint_id": "C1",
+      "status": "compliant",
+      "evidence_from_letter": "Die maximale Grabentiefe darf 80 cm nicht unterschreiten.",
+      "reasoning": "The municipal letter requires a trench depth of at least 80 cm. The ruleset requires at least 60 cm. Because 80 >= 60, the rule is compliant.",
+      "recommendation": null
+    },
+    {
+      "rule_id": "R2",
+      "rule_text": "Bauarbeiten sind zwischen 6:00 und 20:00 Uhr zulässig",
+      "related_constraint_id": "C2",
+      "status": "compliant",
+      "evidence_from_letter": "Die Bauarbeiten sind ausschließlich in der Zeit von 7:00 bis 17:00 Uhr durchzuführen.",
+      "reasoning": "The municipal letter allows Bauarbeiten only from 07:00 to 17:00. The ruleset allows Bauarbeiten between 6:00 and 20:00. Because the municipal time window is inside the allowed ruleset window, the rule is compliant.",
+      "recommendation": null
+    },
+    {
+      "rule_id": "R3",
+      "rule_text": "Offene Gräben müssen entweder gesichert oder abgedeckt werden",
+      "related_constraint_id": "C3",
+      "status": "partial_compliance",
+      "evidence_from_letter": "Offene Gräben sind über Nacht ordnungsgemäß abzudecken oder zu sichern.",
+      "reasoning": "The municipal letter contains a trench-security requirement: 'Offene Gräben sind über Nacht ordnungsgemäß abzudecken oder zu sichern.'. This is aligned with the ruleset because open trenches must be covered or secured. However, the municipal letter links this requirement to a specific time condition. The ruleset does not explicitly contain such a limitation. Therefore, the rule is treated as partial compliance.",
+      "recommendation": "Clarify whether open trenches must be secured or covered generally, or only during the specified time condition."
+    },
+    {
+      "rule_id": "R4",
+      "rule_text": "Arbeiten innerhalb von 2 m um geschützte Bäume sind verboten",
+      "related_constraint_id": "C4",
+      "status": "partial_compliance",
+      "evidence_from_letter": "Erdarbeiten im unmittelbaren Bereich von Bäumen sind nicht zulässig.",
+      "reasoning": "The municipal letter forbids Erdarbeiten im unmittelbaren Bereich von Bäumen. This is directionally aligned with the ruleset because work near trees is restricted. However, the letter does not explicitly mention the exact 2 m distance or the term 'geschützte Bäume'. Therefore, the rule is treated as partial compliance.",
+      "recommendation": "Clarify whether 'im unmittelbaren Bereich von Bäumen' corresponds to the required 2 m protection zone around protected trees."
+    },
+    {
+      "rule_id": "R5",
+      "rule_text": "Wöchentliche Fortschrittsberichte sind zulässig, aber nicht verpflichtend",
+      "related_constraint_id": "C5",
+      "status": "compliant",
+      "evidence_from_letter": "Ein wöchentlicher Fortschrittsbericht ist der zuständigen Behörde vorzulegen.",
+      "reasoning": "The municipal letter contains a progress-report constraint: 'Ein wöchentlicher Fortschrittsbericht ist der zuständigen Behörde vorzulegen.'. The ruleset states that weekly progress reports are allowed but not mandatory. Because the municipal letter includes a progress-report requirement that is allowed by the ruleset, the rule is compliant.",
+      "recommendation": null
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "document_name": "Municipal_Letter.docx",
+  "constraints": [
+    {
+      "constraint_id": "C1",
+      "source_text": "Die maximale Grabentiefe darf 80 cm nicht unterschreiten.",
+      "constraint_type": "grabentiefe",
+      "parameter": "Grabentiefe",
+      "operator": ">=",
+      "value": 80.0,
+      "unit": "cm",
+      "time_window": {
+        "start_time": null,
+        "end_time": null
+      },
+      "condition": null,
+      "obligation": "required",
+      "confidence": 1.0
+    },
+    {
+      "constraint_id": "C2",
+      "source_text": "Die Bauarbeiten sind ausschließlich in der Zeit von 7:00 bis 17:00 Uhr durchzuführen.",
+      "constraint_type": "arbeitszeit",
+      "parameter": "Bauarbeiten",
+      "operator": "required",
+      "value": null,
+      "unit": null,
+      "time_window": {
+        "start_time": "07:00",
+        "end_time": "17:00"
+      },
+      "condition": null,
+      "obligation": "required",
+      "confidence": 1.0
+    },
+    {
+      "constraint_id": "C3",
+      "source_text": "Offene Gräben sind über Nacht ordnungsgemäß abzudecken oder zu sichern.",
+      "constraint_type": "grabensicherung",
+      "parameter": "Offene Gräben",
+      "operator": "required",
+      "value": null,
+      "unit": null,
+      "time_window": {
+        "start_time": null,
+        "end_time": null
+      },
+      "condition": "über Nacht",
+      "obligation": "required",
+      "confidence": 1.0
+    },
+    {
+      "constraint_id": "C4",
+      "source_text": "Erdarbeiten im unmittelbaren Bereich von Bäumen sind nicht zulässig.",
+      "constraint_type": "baumschutz",
+      "parameter": "Erdarbeiten",
+      "operator": "forbidden",
+      "value": null,
+      "unit": null,
+      "time_window": {
+        "start_time": null,
+        "end_time": null
+      },
+      "condition": "im unmittelbaren Bereich von Bäumen",
+      "obligation": "forbidden",
+      "confidence": 1.0
+    },
+    {
+      "constraint_id": "C5",
+      "source_text": "Ein wöchentlicher Fortschrittsbericht ist der zuständigen Behörde vorzulegen.",
+      "constraint_type": "fortschrittsbericht",
+      "parameter": "Fortschrittsbericht",
+      "operator": "required",
+      "value": "wöchentlich",
+      "unit": null,
+      "time_window": {
+        "start_time": null,
+        "end_time": null
+      },
+      "condition": "der zuständigen Behörde vorzulegen",
+      "obligation": "required",
+      "confidence": 1.0
+    }
+  ]
+}
